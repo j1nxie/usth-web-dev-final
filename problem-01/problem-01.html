@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="problem-01.css" rel="stylesheet" />
+    <title>Problem 01</title>
+</head>
+
+<body>
+    <table>
+        <th colspan="3">account</th>
+        <tr>
+            <td class="top-row"><b>PK</b></td>
+            <td class="top-row"><b>accountID</b></td>
+            <td class="top-row">int</td>
+        </tr>
+        <tr>
+            <td class="even-row" style="background-color: lightgray;"></td>
+            <td class="even-row" style="background-color: lightgray;">username</td>
+            <td class="even-row" style="background-color: lightgray;">varchar</td>
+        </tr>
+        <tr>
+            <td class="bottom-row"></td>
+            <td class="bottom-row">password</td>
+            <td class="bottom-row">varchar</td>
+        </tr>
+    </table>
+
+    <table>
+        <th colspan="3">photo</th>
+        <tr>
+            <td class="top-row"><b>PK</b></td>
+            <td class="top-row"><b>photoID</b></td>
+            <td class="top-row">int</td>
+        </tr>
+        <tr>
+            <td class="bottom-row" style="background-color: lightgray;"></td>
+            <td class="bottom-row" style="background-color: lightgray;">data</td>
+            <td class="bottom-row" style="background-color: lightgray;">varchar</td>
+        </tr>
+    </table>
+
+    <table>
+        <th colspan="3">account_photo</th>
+        <tr>
+            <td class="top-row"><b>FK</b></td>
+            <td class="top-row"><b>accountID</b></td>
+            <td class="top-row">int</td>
+        </tr>
+        <tr>
+            <td class="bottom-row" style="background-color: lightgray;"><b>FK</b></td>
+            <td class="bottom-row" style="background-color: lightgray;"><b>photoID</b></td>
+            <td class="bottom-row" style="background-color: lightgray;">int</td>
+    </table>
+</body>
